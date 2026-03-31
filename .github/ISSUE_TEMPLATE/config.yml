@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Perbug Core Security Policy
+    url: https://github.com/perbug/perbug/blob/master/SECURITY.md
+    about: View security policy
+  - name: Perbug Core Developers
+    url: https://perbugcore.org
+    about: Perbug Core homepage

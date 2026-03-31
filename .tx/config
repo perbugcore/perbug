@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[o:perbug:p:perbug:r:qt-translation-030x]
+file_filter = src/qt/locale/perbug_<lang>.xlf
+source_file = src/qt/locale/perbug_en.xlf
+source_lang = en

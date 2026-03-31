@@ -1,0 +1,33 @@
+# /etc/conf.d/perbugd: config file for /etc/init.d/perbugd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/perbug/perbug.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/perbugd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/perbugd.pid"
+
+# Where to write perbugd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/perbugd"
+
+# User and group to own perbugd process
+#BITCOIND_USER="perbug"
+#BITCOIND_GROUP="perbug"
+
+# Path to perbugd executable
+#BITCOIND_BIN="/usr/bin/perbugd"
+
+# Nice value to run perbugd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for perbugd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=600
